@@ -50,7 +50,21 @@ body {
     height: 100%;
     width: 100%;
     border-bottom: 3px solid #5fa8d3;
+    transform: translateX(-100%);
+    
 }
 
+.content-name {
+    position: absolute;
+    bottom: 5px;
+    left: 0px;
+    transition: all .3s ease;
+}
+
+.form input:focus + .label-name .content-name {
+    transform: translateY(-150%);
+    font-size: .95em;
+    color: #dc143c;
+}
 
 
