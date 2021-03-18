@@ -16,6 +16,8 @@ body {
 .form {
     width: 50%;
     position: relative;
+    height: 50px;
+    overflow: hidden;
 }
 
 .form {
@@ -30,6 +32,7 @@ body {
     color: #595f6e;
     padding-top: 20px;
     border: none;
+    outline: none;
 }
 
 .form label {
@@ -51,6 +54,7 @@ body {
     width: 100%;
     border-bottom: 3px solid #5fa8d3;
     transform: translateX(-100%);
+    transition: transform 0.3s ease;
     
 }
 
@@ -61,10 +65,16 @@ body {
     transition: all .3s ease;
 }
 
-.form input:focus + .label-name .content-name {
+/*add animation when 'required' input value is valid*/
+.form input:focus + .label-name .content-name,
+.form input:valid + .label-name .content-name
+{
     transform: translateY(-150%);
     font-size: .95em;
     color: #dc143c;
 }
 
+.form input:focus + .label-name::after, .form input:valid + .label-name::after {
+    transform: translateX(0%);
+} 
 
