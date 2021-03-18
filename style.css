@@ -43,7 +43,8 @@ h1{
     overflow: hidden;
     margin: 10px auto;
     font-size: 1.1em;
-    color: red;
+    color: #0000ff;
+
 }
 
 .form {
@@ -97,7 +98,8 @@ h1{
 {
     transform: translateY(-150%);
     font-size: .95em;
-    color: #0000ff;
+    color: rgb(11, 228, 243);
+
 }
 
 .form input:focus + .label-name::after, .form input:valid + .label-name::after {
