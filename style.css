@@ -103,3 +103,20 @@ h1{
 } 
 
 
+@media screen and (max-width: 768px) {
+    h1{
+        font-size: 1.5em;
+    }
+    
+    .container {
+        width: 100%;
+        height: 70vh;
+        justify-content: space-evenly;
+    }
+    .form {
+        width: 80%;
+        height: 50px;
+        overflow: hidden;
+        margin: 1px auto;
+    }
+}
