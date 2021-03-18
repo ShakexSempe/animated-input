@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&family=Ubuntu&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 body {
@@ -18,7 +20,8 @@ body {
 h1{
     font-size: 2em;
     text-align: center;
-    color: #eee;
+    color: rgb(11, 228, 243);
+    font-family: 'Syne Mono', monospace;
 }
 
 .container {
